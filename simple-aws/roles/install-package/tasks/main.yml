@@ -12,7 +12,7 @@
 
 - name: copy index file
   copy:
-    src: /home/kpaulino/GIF/index.html
+    src: /public/index.html
     dest: /var/www/html
 
 - name: Start and enable service
