@@ -10,6 +10,11 @@
 
 - debug: msg="{{ output.stdout }}"
 
+- name: copy index file
+  copy:
+    src: files/home/kpaulino/GIF/index.html
+    dest: /var/www/html
+
 - name: Start and enable service
   service:
     name: "{{ service_name }}"
