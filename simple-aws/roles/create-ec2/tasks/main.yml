@@ -2,7 +2,7 @@
 - name: Launch EC2 instance
   ec2:
     region: "{{ ec2_server_region }}"
-    # group: "{{ ec2_server_security_group }}"
+    group: "{{ ec2_server_security_group }}"
     keypair: "{{ ec2_server_keypair }}"
     instance_type: "{{ ec2_instance_type }}"
     image: "{{ ec2_server_image }}"
